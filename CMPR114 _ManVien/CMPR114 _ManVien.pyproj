@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1a7d2cf7-61c6-4240-b7f3-ec8fd5176b6b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CMPR114__ManVien.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CMPR114__ManVien.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 1.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 2.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 3.py" />
