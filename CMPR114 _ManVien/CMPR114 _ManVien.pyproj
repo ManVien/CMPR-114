@@ -22,6 +22,33 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="M1 Chapter 2 Class Ex 1 Part 1\Challenge Exercise 4.py" />
+    <Compile Include="M1 Chapter 2 Class Ex 1 Part 1\Challenge Exercise 5.py" />
+    <Compile Include="M1 Chapter 2 Class Ex 1 Part 1\Challenge Exercise 6.py" />
+    <Compile Include="M1 Chapter 2 Class Ex Part 2\Challenge Exercise 1.py" />
+    <Compile Include="M1 Chapter 2 Class Ex Part 2\Challenge Exercise 3.py" />
+    <Compile Include="M1 Chapter 2 Class Ex Part 2\Challenge Exercise 4.py" />
+    <Compile Include="M1 Chapter 2 Class Ex Part 2\Challenge Exercise 5.py" />
+    <Compile Include="M1 Homework 1\Project 1.py" />
+    <Compile Include="M1 Homework 1\Project 2.py" />
+    <Compile Include="M1 Homework 1\Project 3.py" />
+    <Compile Include="M1 Homework 1\Project 4.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Challenge Exercise 1.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Challenge Exercise 2.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Challenge Exercise 3.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Challenge Exercise 4.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Challenge Exercise 5.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Project 1.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Project 3.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Project 4.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 1\Project 5.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 2\Challenge Exercise 1.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 2\Challenge Exercise 2.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 2\Project 1.py" />
+    <Compile Include="M2 Chapter 3 Class Ex 2 Part 2\Project 2.py" />
+    <Compile Include="M2 Homework 2\Project 1.py" />
+    <Compile Include="M2 Homework 2\Project 2.py" />
+    <Compile Include="M2 Homework 2\Project 3.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 1.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 2.py" />
     <Compile Include="M3 Chapter 4 Class Ex 3 Part 1\Challenge Exercise 3.py" />
@@ -59,6 +86,12 @@
     <Folder Include="M7 Chapter 7 Lists Class Ex 6\" />
     <Folder Include="M3 Homework 3\" />
     <Folder Include="M7 Homework 7\" />
+    <Folder Include="M2 Homework 2\" />
+    <Folder Include="M2 Chapter 3 Class Ex 2 Part 1\" />
+    <Folder Include="M2 Chapter 3 Class Ex 2 Part 2\" />
+    <Folder Include="M1 Homework 1\" />
+    <Folder Include="M1 Chapter 2 Class Ex 1 Part 1\" />
+    <Folder Include="M1 Chapter 2 Class Ex Part 2\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
