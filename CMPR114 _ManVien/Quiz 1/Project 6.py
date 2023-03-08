@@ -19,8 +19,8 @@ average = total / MAX
 if average > 100:
     print('\nThe average is greater than 100.\n')
 
-# Set the total to 0 to start the new calculation for average
-total = 0.0
+    # Set the total to 0 to start the new calculation for average
+    total = 0.0
 
 # Use a while loop - inform the user to re-enter the scores.
 while average > 100:

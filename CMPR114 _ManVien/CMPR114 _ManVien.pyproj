@@ -72,6 +72,10 @@
     <Compile Include="M3 Homework 3\Project 1.py" />
     <Compile Include="M3 Homework 3\Project 2.py" />
     <Compile Include="M3 Homework 3\Project 3.py" />
+    <Compile Include="M4 Homework 4.7\Project 1.py" />
+    <Compile Include="M4 Homework 4.7\Project 2.py" />
+    <Compile Include="M4 Homework 4.7\Project 3.py" />
+    <Compile Include="M4 Homework 4.7\Project 4.py" />
     <Compile Include="M7 Chapter 7 Lists Class Ex 6\Challenge Exercise 4a.py" />
     <Compile Include="M7 Chapter 7 Lists Class Ex 6\Challenge Exercise 4b.py" />
     <Compile Include="M7 Chapter 7 Lists Class Ex 6\Challenge Exercise 5.py" />
@@ -99,6 +103,7 @@
     <Folder Include="M1 Homework 1\" />
     <Folder Include="M1 Chapter 2 Class Ex 1 Part 1\" />
     <Folder Include="M1 Chapter 2 Class Ex Part 2\" />
+    <Folder Include="M4 Homework 4.7\" />
     <Folder Include="Quiz 1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
