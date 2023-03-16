@@ -5,14 +5,30 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CMPR114 _ManVien", "CMPR114 _ManVien\CMPR114 _ManVien.pyproj", "{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Week 6_Module 5 (Chapter 5 Functions)", "Week 6\Week 6_Module 5 (Chapter 5 Functions).pyproj", "{8802637A-8E22-4A78-8E25-116001CCA2EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Release|x64.ActiveCfg = Release|Any CPU
+		{1A7D2CF7-61C6-4240-B7F3-EC8FD5176B6B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
