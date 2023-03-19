@@ -41,6 +41,9 @@
     <Compile Include="Class Exercise 4 Part 2\Project 2.py" />
     <Compile Include="Class Exercise 4 Part 2\Project 3.py" />
     <Compile Include="Class Exercise 4 Part 2\Project4.py" />
+    <Compile Include="HW 5\Project 1.py" />
+    <Compile Include="HW 5\Project 2.py" />
+    <Compile Include="HW 5\Project 3.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class Exercise 4 Part 1\" />
