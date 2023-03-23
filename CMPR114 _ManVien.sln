@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CMPR114 _ManVien", "CMPR114
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Week 6_Module 5 (Chapter 5 Functions)", "Week 6\Week 6_Module 5 (Chapter 5 Functions).pyproj", "{8802637A-8E22-4A78-8E25-116001CCA2EE}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Week 7_Module 6 (Files and Exceptions + GUI Apps)", "Week 7_Module 6 (Files and Exceptions + GUI Apps)\Week 7_Module 6 (Files and Exceptions + GUI Apps).pyproj", "{9C62722C-288C-4BF5-922D-07BC03BC1CAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,12 @@ Global
 		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|x64.ActiveCfg = Release|Any CPU
 		{8802637A-8E22-4A78-8E25-116001CCA2EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C62722C-288C-4BF5-922D-07BC03BC1CAD}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

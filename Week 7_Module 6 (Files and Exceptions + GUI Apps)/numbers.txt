@@ -1,0 +1,5 @@
+the 1st number is 8
+the 2nd number is 12
+the 3rd number is 1
+the avg number is 7.0
+the total number is 21

@@ -1,0 +1,4 @@
+The average grade: 101.50
+The average grade cannot be less than 0 or higher than 100. Please try again.
+The average grade: 83.50
+Letter grade B
