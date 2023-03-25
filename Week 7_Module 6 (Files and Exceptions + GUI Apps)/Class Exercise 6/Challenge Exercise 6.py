@@ -1,7 +1,6 @@
 # This program create a GUI interface that will write 3 numbers
 # and sum + averages the total into a text file.
 
-from email import message
 import tkinter as tk # import the gui interface controls
 from tkinter import messagebox # imports the messagebox display
 
@@ -11,7 +10,7 @@ win.title("Numbers, Sum, and Average") # Label for the title
 
 lblNumber1 = tk.Label(win, text = "enter the first number").grid(column = 0, row = 0) # Label widget
 lblNumber2 = tk.Label(win, text = "enter the second number").grid(column = 0, row = 1) 
-lblNumber3 = tk.Label(win, text = "enter the third number:").grid(column = 0, row = 2) 
+lblNumber3 = tk.Label(win, text = "enter the third number").grid(column = 0, row = 2) 
 
 num1 = tk.StringVar() # the StringVar manages the Entry widget
 txtNumber1 = tk.Entry(win, width = 12, textvariable = num1).grid(column = 1, row = 0) # Text Entry widget
@@ -20,10 +19,26 @@ txtNumber2 = tk.Entry(win, width = 12, textvariable = num2).grid(column = 1, row
 num3 = tk.StringVar()
 txtNumber3 = tk.Entry(win, width = 12, textvariable = num3).grid(column = 1, row = 2)
 
+def get_total():
+    return (float(num1.get()) + float(num2.get()) + float(num3.get()))
+
+def total():   
+    messagebox.showinfo("Numbers, Sum, and Average","Total: " + str(get_total()))
+
+def get_average():
+    return ((float(num1.get()) + float(num2.get()) + float(num3.get())) / 3.0)
+
+def average():  
+    messagebox.showinfo("Numbers, Sum, and Average","Average: " + str(get_average()))
+
+def quit():
+    messagebox.showinfo("Numbers, Sum, and Average","Thank you...")
+    win.destroy() # closes the interface
+
 def write():
     text_file = open("sum_and_average.txt","a")
-    total1 = total()
-    average1 = average()
+    total1 = get_total()
+    average1 = get_average()
     content = text_file.write("The three numbers are: " + str(num1.get()) + ", " 
                               + str(num2.get()) + " and " + str(num3.get()) + "\n"
                               + f"The total is {total1:.2f}" + "\n" 
@@ -31,20 +46,6 @@ def write():
 
     text_file.close()
     messagebox.showinfo("Numbers, Sum, and Average","Data Recorded")
-
-def quit():
-    messagebox.showinfo("Numbers, Sum, and Average","Thank you...")
-    win.destroy() # closes the interface
-
-def total():   
-    total = float(num1.get()) + float(num2.get()) + float(num3.get())
-    messagebox.showinfo("Numbers, Sum, and Average","Total : " + str(total)) 
-    return total
-
-def average():  
-    average = (float(num1.get()) + float(num2.get()) + float(num3.get())) / 3.0
-    messagebox.showinfo("Numbers, Sum, and Average","Average : " + str(average)) 
-    return average
 
                                             # command calls the total function
 btnTotal = tk.Button(win, text = "total", command = total).grid(column = 0, row = 6) # Button widget
@@ -59,5 +60,4 @@ btnQuit = tk.Button(win, text = "quit", command = quit).grid(column = 2, row = 6
 btnWrite = tk.Button(win, text = "transfer", command = write).grid(column = 3, row = 6) # Button widget
 
 win.mainloop() # ensures the interfaces stays on the screen on window
-
 

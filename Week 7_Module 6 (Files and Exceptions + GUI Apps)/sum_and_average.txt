@@ -1,4 +1,3 @@
-
 The three numbers are: 1, 2 and 3
 The total is 6.00
 The average is 2.00

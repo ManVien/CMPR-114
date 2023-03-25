@@ -1,36 +1,49 @@
 # This program writes random numbers from 1-10 into a text file and read the contents.
 
+import random 
+
 def main():
-    import random 
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    selected = random.choices(numbers, k=3)
-    print(selected)
+    value = create_random_numbers()
+    write(value)
+    read()
 
-    # Open a file in append mode
-    outfile = open('random_numbers.txt','a')
+def create_random_numbers():
+    # Create an empty list.
+    numbers = []
 
-    # Write the output to the file
-    for num in selected:
-        outfile.write(str(num) + '\n')
+    # Create and add random numbers to the list.
+    for index in range(10):
+        numbers.append(random.randint(1,10))
 
-    # Close the file
-    outfile.close()
-    print('data recorded.\n')
+    return numbers
 
-    Read()
+def write(numbers): # write to a file
+    try:
+        # Open a file in append mode
+        outfile = open('random_numbers.txt','a')
 
-def Read():
+        # Write the output to the file
+        for count in numbers:
+            outfile.write(str(count) + '\n')
 
-    infile = open('random_numbers.txt','r')
+        # Close the file
+        outfile.close()
+        print('data recorded.')
+    except Exception as err:  # built-in Exception error processing
+        print(err)
 
-    # Read the first line from the file
-    line = infile.readlines()
+def read(): # reading
+    print('\nReading the contents from file.')
+    try:
+        infile = open('random_numbers.txt','r')
 
-    infile.close()
+        for line in infile:
+            print(line.rstrip('\n'))
 
-    for index in range(len(line)):
-        line[index] = line[index].rstrip('\n')
+        infile.close()
+    except Exception as err:  
+        print(err)
 
-    print(line)
+    print()
 
 main()

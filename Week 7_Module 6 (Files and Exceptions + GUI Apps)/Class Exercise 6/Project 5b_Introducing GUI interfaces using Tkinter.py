@@ -1,6 +1,5 @@
 # Project 5b (Introducing GUI interfaces using Tkinter)
 
-from email import message
 import tkinter as tk # import the gui interface controls
 from tkinter import messagebox # imports the messagebox display
 

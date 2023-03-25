@@ -3,47 +3,30 @@
 # Use the table as a guide. Use also the try statement for this application. 
 # Make sure to append the data and read the content of the file also.
 
-from multiprocessing import Value
-
-
 def main():
-    # Get the test scores from the user.
-    name, midterm, final = get_scores()
+    try:
+        # Get the full name, midterm, and final grade from the user.
+        name, midterm, final = get_values()
 
-    # Get the total of the test scores.
-    total = get_total(midterm, final)
+        # Get the total of the test scores.
+        average = get_calculations(midterm, final)
     
-    # Calculate the average. 
-    average = total / 2.0
+        write(name, average)
 
-    # Display the average.
-    print(f'Average grade: {average:.2f}')
+        # Display the letter grade.
+        letter_grade(average)
 
-    # Open a file in append mode
-    outfile = open('average_and_letter_grade.txt','a')
+        print('Data recorded.')
 
-    # Write the output to the file
-    outfile.write(f'The average grade: {average:.2f}\n')
+        # Read the content of the file
+        read()
 
-    # Close the file
-    outfile.close()
+    except Exception as err:  # built-in Exception error processing
+        print(err)
 
-    # Display the letter grade.
-    letter_grade(average)
-
-    print('Data recorded.\n')
-
-    # Read the content of the file
-    Read()
-
-# The get_scores function gets a series of test
-# scores from the user and stores them in a list.
-# A reference to the list is returned.
-def get_scores():
-
+def get_values():
     while True:
         try: # try the batch of code below, if there are no errors than disregard the except
-            # Get a score and add it to the list.
             name = input('Enter the full name: ')
             midterm_score = float(input('Enter the grade of the midterm: '))
             final_exam_score = float(input('Enter the grade of final exam: '))
@@ -51,68 +34,81 @@ def get_scores():
             # Return values
             return name, midterm_score, final_exam_score
 
-        except Exception as err: # built-in Exception error processing
-                print(err)
+        except Exception as err:
+            print(err)
 
-# The get_total function accepts a list as an 
-# argument and returns the total of the values in
-# the list.
-def get_total(midterm, final):
-    # Create a variable to use as an accumulator.
-    total = 0.0
+def get_calculations(midterm, final):
+    try:
+        # Create a variable to use as an accumulator.
+        total = 0.0
+        # Calculate the total and average
+        total = midterm + final
+        average = total / 2
+        # Return the average.
+        return average
 
-    # Calculate the total
-    total = midterm + final
-
-    # Return the total.
-    return total
+    except Exception as err:
+        print(err)
 
 def letter_grade(average):
-    # Open a file in append mode
-    outfile = open('average_and_letter_grade.txt','a')
+    try:
+        # Open a file in append mode
+        outfile = open('average_and_letter_grade.txt','a')
 
-    if average >= 90 and average <= 100: 
-        print('Letter grade A')
-        outfile.write('Letter grade A\n')
-    elif average >= 80 and average <= 89:
-        #lgrade = 'B'  
-        print('Letter grade B')
-        outfile.write('Letter grade B\n')
-    elif average >= 70 and average <= 79:
-        #lgrade = 'C'
-        print('Letter grade C')
-        outfile.write('Letter grade C\n')
-    elif average >= 60 and average <= 69:
-        #lgrade = 'D'
-        print('Letter grade D')
-        outfile.write('Letter grade D\n')
-    elif average >= 0 and average < 60:
-         #lgrade = 'F'       
-        print('Letter grade F')
-        outfile.write('Letter grade F\n')
-    else:
-        print('The average grade cannot be less than 0 or higher than 100. Please try again.')
-        outfile.write('The average grade cannot be less than 0 or higher than 100. Please try again.\n')
+        if average >= 90 and average <= 100: 
+            outfile.write('Letter grade A\n\n')
+        elif average >= 80 and average <= 89:
+            outfile.write('Letter grade B\n\n')
+        elif average >= 70 and average <= 79:
+            outfile.write('Letter grade C\n\n')
+        elif average >= 60 and average <= 69:
+            outfile.write('Letter grade D\n\n')
+        elif average >= 0 and average < 60:
+            outfile.write('Letter grade F\n\n')
+        else:
+            outfile.write('The average grade cannot be less than 0 or higher than 100.' 
+            + 'Please try again.\n')
 
-    # Close the file
-    outfile.close()
+        # Close the file
+        outfile.close()
 
-def Read():
+    except Exception as err:
+        print(err)
 
-    grades_file = open('average_and_letter_grade.txt','r')
+def write(name, average):
+    try:
+        # Open a file in append mode
+        outfile = open('average_and_letter_grade.txt','a')
 
-    # Read the first line from the file
-    line = grades_file.readline()
+        # Write to the file
+        outfile.write(f'Name: {name}' + '\n' + f'The average grade: {average:.2f}\n')
 
-    while line != '': # as long as an empty string is NOT returned
-        # Strip the \n from the line
-        line_content = line.rstrip('\n')
-        # Display the record.
-        print(line_content)
-        # Read the next line
+        # Close the file
+        outfile.close()
+
+    except Exception as err:
+        print(err)
+
+def read():
+    print('\nReading from the file')
+    try:
+        grades_file = open('average_and_letter_grade.txt','r')
+
+        # Read the first line from the file
         line = grades_file.readline()
 
-    grades_file.close()
+        while line != '': # as long as an empty string is NOT returned
+            # Strip the \n from the line
+            line_content = line.rstrip('\n')
+            # Display the record.
+            print(line_content)
+            # Read the next line
+            line = grades_file.readline()
+
+        grades_file.close()
+
+    except Exception as err:
+        print(err)
 
 # Call the main function.
 if __name__ == '__main__':

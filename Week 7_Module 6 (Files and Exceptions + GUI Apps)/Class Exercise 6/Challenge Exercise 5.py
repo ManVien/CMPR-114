@@ -1,7 +1,6 @@
 # Continuing with project 5b, add the address, city, state with zip code
 # and transfer the information to a text file.
 
-from email import message
 import tkinter as tk # import the gui interface controls
 from tkinter import messagebox # imports the messagebox display
 
