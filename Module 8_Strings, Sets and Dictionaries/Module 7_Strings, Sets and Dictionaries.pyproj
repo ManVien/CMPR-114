@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7fed8c8c-83ff-472b-9fd3-85030feaf311</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Module 7_Strings, Sets and Dictionaries</Name>
+    <RootNamespace>Module 8_Strings, Sets and Dictionaries</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="M7 Class Exercise 7 Strings\" />
+    <Folder Include="M7 Class Exercise 7 Sets Dictionaries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Challenge Exercise 2.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Challenge Exercise 4a.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Challenge Exercise 4b Total Sales App.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Challenge Exercise 5.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 1.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 2.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 3_Challenge Exercise 1.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 4 pickle_objects.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 4 Tkinter.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 4 unpickle_objects.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 5.py" />
+    <Compile Include="M7 Class Exercise 7 Sets Dictionaries\Project 6.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\Exercise 1.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\Exercise 2.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\login.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\Exercise 3.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\Exercise 4.py" />
+    <Compile Include="M7 Class Exercise 7 Strings\Exercise 5.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
