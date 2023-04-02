@@ -13,6 +13,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Week 7_Module 6_Homework 6"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 7_Strings, Sets and Dictionaries", "Module 8_Strings, Sets and Dictionaries\Module 7_Strings, Sets and Dictionaries.pyproj", "{7FED8C8C-83FF-472B-9FD3-85030FEAF311}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 7_Homework 7", "Module 7_Homework 7\Module 7_Homework 7.pyproj", "{6AA955E7-EA54-4501-B534-18AD69D6CA0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,12 @@ Global
 		{7FED8C8C-83FF-472B-9FD3-85030FEAF311}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FED8C8C-83FF-472B-9FD3-85030FEAF311}.Release|x64.ActiveCfg = Release|Any CPU
 		{7FED8C8C-83FF-472B-9FD3-85030FEAF311}.Release|x86.ActiveCfg = Release|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|x64.ActiveCfg = Release|Any CPU
+		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
