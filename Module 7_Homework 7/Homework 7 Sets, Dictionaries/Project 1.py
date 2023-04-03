@@ -16,26 +16,93 @@
 
 import random
 
-def start():
+def main():
     # Create a deck of cards.
     deck = create_deck()
-    
-    # Get the number of cards to deal.
-    num_cards = int(input('How many cards should I deal? '))
-    
-    # Deal the cards.
-    deal_cards(deck, num_cards)
+    count = 0
+    while len(deck) != 0:
+        hand_value1, hand_value2 = function(deck)
+        count += 1
+        count1, count2, count3, count4 = get_winner(hand_value1, hand_value2)
+        
+    print(f'Rounds played: {count}.\n')
+    print(f'Player 1 wins {count1} rounds.\n')
+    print(f'Player 2 wins {count2} rounds.\n')
+    print(f'Both wins {count4} round(s).\n')
+    print(f'No wins {count3} round(s).\n')
 
-    player1 = {'cards': [], 'score': 0}
-    player2 = {'cards': [], 'score': 0}
-    is_over = False
-    while deck:
-        deal(deck,player1)
-        deal(deck,player2)
-        if is_over:
+def function(deck):
+    hand_value1 = 0
+    hand_value2 = 0
+
+    while hand_value1 < 21 and hand_value2 < 21:
+        card1 = random.choice(list(deck))
+        print('Player 1:',card1)
+
+        if card1 == 'Ace of Spades' or card1 == 'Ace of Hearts'\
+            or card1 == 'Ace of Clubs' or card1 == 'Ace of Diamonds':
+            if hand_value1 > 21:
+                hand_value1 += deck[card1]
+                pop_card = deck.pop(card1)
+            else:
+                hand_value1 += 11
+                pop_card = deck.pop(card1)
+        else: 
+            hand_value1 += deck[card1]
+            pop_card = deck.pop(card1)
+
+        if len(deck) == 0:
+                break
+
+        card2 = random.choice(list(deck))
+        print('Player 2:',card2)
+
+        if card2 == 'Ace of Spades' or card2 == 'Ace of Hearts'\
+            or card2 == 'Ace of Clubs' or card2 == 'Ace of Diamonds':
+            if hand_value2 > 21:
+                hand_value2 += deck[card2]
+                pop_card = deck.pop(card2)
+            else:
+                hand_value2 += 11
+                pop_card = deck.pop(card2)
+            
+        else:
+            hand_value2 += deck[card2]
+            pop_card = deck.pop(card2)
+
+        if len(deck) == 0:
             break
-    get_winner(player1,player2)
- 
+        
+    return hand_value1, hand_value2
+
+def get_winner(hand_value1,hand_value2):
+    count1 = 0
+    count2 = 0
+    count3 = 0
+    count4 = 0
+
+    if hand_value1 <= 21 and hand_value2 > 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('Player 1 wins.\n')
+        count1 += 1
+    elif hand_value1 > 21 and hand_value2 <= 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print(f'Player 2 wins.\n')
+        count2 += 1 
+    elif hand_value1 > 21 and hand_value2 > 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('There is no winner.\n')
+        count3 += 1
+    else:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('Both players win.\n')
+        count4 += 1
+    return count1, count2, count3, count4
+
 # The create_deck function returns a dictionary
 # representing a deck of cards.
 def create_deck():
@@ -67,56 +134,7 @@ def create_deck():
     
     # Return the deck
     return deck
-
-# The deal_cards function deals a specified number of cards
-# from the deck.
-def deal_cards(deck, number):
-    # Initialize an accumulator for the hand value.
-    hand_value = 0
-
-    # Make sure the number of cards to deal is not
-    # greater than the number of cards in the deck.
-    if number > len(deck):
-        number = len(deck)
-
-    # Deal the cards and accumulate their values.
-    for count in range(number):
-        card = random.choice(list(deck))
-        print(card)
-        hand_value += deck[card]
-
-    # Display the value of the hand.
-    print(f'Value of this hand: {hand_value}')
-
-def deal(deck,player):
-    
-    card = deck.popitem()
-    if card == 'Ace of Spades' or card == 'Ace of Hearts' or card == 'Ace of Clubs' or card == 'Ace of Diamonds':
-        if player['score'] + 11 <= 21:
-            player['score'] += 11
-        else:
-            player['score'] += 1
-
-    elif card in ['Jack of Spades','Queen of Spades', 'King of Spades','Jack of Hearts',
-            'Queen of Hearts', 'King of Hearts','Jack of Clubs',
-            'Queen of Clubs', 'King of Clubs','Jack of Diamonds',
-            'Queen of Diamonds', 'King of Diamonds']:
-        player['score'] += 10
-
-    else:
-        player['score'] += deck[card]
-    player['cards'].append(card)
-
-    if player['score'] > 21:
-        print(f'{player["cards"]}-> GAME OVER')
-        is_over = True
-
-def get_winner(player1, player2):
-    if player1['score'] <= 21 and (player2['score'] > 21 or player1['score'] > player2['score']):
-        print(f'Player 1 wins with score {player1["score"]}')
-    elif player2['score'] <= 21 and (player1['score'] > 21 or player2['score'] > player1['score']):
-        print(f'Player 2 wins with score {player2["score"]}')
-    else:
-        print('No winner.')
-
-start()
+            
+# Call the main function.
+if __name__ == '__main__':
+    main()
