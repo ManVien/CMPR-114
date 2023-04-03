@@ -17,91 +17,33 @@
 import random
 
 def main():
+    count_round = 0
+    player1_win = 0
+    player2_win = 0
+    no_win = 0
+    both_win = 0
+
     # Create a deck of cards.
     deck = create_deck()
-    count = 0
+   
     while len(deck) != 0:
-        hand_value1, hand_value2 = function(deck)
-        count += 1
-        count1, count2, count3, count4 = get_winner(hand_value1, hand_value2)
-        
-    print(f'Rounds played: {count}.\n')
-    print(f'Player 1 wins {count1} rounds.\n')
-    print(f'Player 2 wins {count2} rounds.\n')
-    print(f'Both wins {count4} round(s).\n')
-    print(f'No wins {count3} round(s).\n')
-
-def function(deck):
-    hand_value1 = 0
-    hand_value2 = 0
-
-    while hand_value1 < 21 and hand_value2 < 21:
-        card1 = random.choice(list(deck))
-        print('Player 1:',card1)
-
-        if card1 == 'Ace of Spades' or card1 == 'Ace of Hearts'\
-            or card1 == 'Ace of Clubs' or card1 == 'Ace of Diamonds':
-            if hand_value1 > 21:
-                hand_value1 += deck[card1]
-                pop_card = deck.pop(card1)
-            else:
-                hand_value1 += 11
-                pop_card = deck.pop(card1)
-        else: 
-            hand_value1 += deck[card1]
-            pop_card = deck.pop(card1)
-
-        if len(deck) == 0:
-                break
-
-        card2 = random.choice(list(deck))
-        print('Player 2:',card2)
-
-        if card2 == 'Ace of Spades' or card2 == 'Ace of Hearts'\
-            or card2 == 'Ace of Clubs' or card2 == 'Ace of Diamonds':
-            if hand_value2 > 21:
-                hand_value2 += deck[card2]
-                pop_card = deck.pop(card2)
-            else:
-                hand_value2 += 11
-                pop_card = deck.pop(card2)
-            
+        hand_value1, hand_value2 = deal(deck)
+        count_round += 1
+        player1_winner, player2_winner, no_winner, both_winner = get_winner(hand_value1, hand_value2)
+        if player1_winner:
+            player1_win += 1
+        elif player2_winner:
+            player2_win += 1
+        elif no_winner:
+            no_win += 1
         else:
-            hand_value2 += deck[card2]
-            pop_card = deck.pop(card2)
+            both_win += 1
 
-        if len(deck) == 0:
-            break
-        
-    return hand_value1, hand_value2
-
-def get_winner(hand_value1,hand_value2):
-    count1 = 0
-    count2 = 0
-    count3 = 0
-    count4 = 0
-
-    if hand_value1 <= 21 and hand_value2 > 21:
-        print(f'Hand value of player 1: {hand_value1}.')
-        print(f'Hand value of player 2: {hand_value2}.')
-        print('Player 1 wins.\n')
-        count1 += 1
-    elif hand_value1 > 21 and hand_value2 <= 21:
-        print(f'Hand value of player 1: {hand_value1}.')
-        print(f'Hand value of player 2: {hand_value2}.')
-        print(f'Player 2 wins.\n')
-        count2 += 1 
-    elif hand_value1 > 21 and hand_value2 > 21:
-        print(f'Hand value of player 1: {hand_value1}.')
-        print(f'Hand value of player 2: {hand_value2}.')
-        print('There is no winner.\n')
-        count3 += 1
-    else:
-        print(f'Hand value of player 1: {hand_value1}.')
-        print(f'Hand value of player 2: {hand_value2}.')
-        print('Both players win.\n')
-        count4 += 1
-    return count1, count2, count3, count4
+    print(f'Rounds played: {count_round}.\n')
+    print(f'Player 1 wins {player1_win} rounds.\n')
+    print(f'Player 2 wins {player2_win} rounds.\n')
+    print(f'Both wins {both_win} round(s).\n')
+    print(f'No wins {no_win} round(s).\n')
 
 # The create_deck function returns a dictionary
 # representing a deck of cards.
@@ -134,6 +76,81 @@ def create_deck():
     
     # Return the deck
     return deck
+
+def deal(deck):
+    hand_value1 = 0
+    hand_value2 = 0
+
+    while hand_value1 < 21 and hand_value2 < 21:
+        card1 = random.choice(list(deck))
+        print('Player 1:',card1)
+
+        # Card of player 1
+        if card1 == 'Ace of Spades' or card1 == 'Ace of Hearts'\
+            or card1 == 'Ace of Clubs' or card1 == 'Ace of Diamonds':
+            if hand_value1 + 11 > 21:
+                hand_value1 += deck[card1]
+                # remove key-value pair of player 1's card from the deck dictionary
+                pop_card = deck.pop(card1)
+            else:
+                hand_value1 += 11
+                pop_card = deck.pop(card1)
+        else: 
+            hand_value1 += deck[card1]
+            pop_card = deck.pop(card1)
+
+        if len(deck) == 0:
+                break
+
+        # Card of player 2
+        card2 = random.choice(list(deck))
+        print('Player 2:',card2)
+
+        if card2 == 'Ace of Spades' or card2 == 'Ace of Hearts'\
+            or card2 == 'Ace of Clubs' or card2 == 'Ace of Diamonds':
+            if hand_value2 > 21:
+                hand_value2 += deck[card2]
+                # remove key-value pair of player 2's card from the deck dictionary
+                pop_card = deck.pop(card2)
+            else:
+                hand_value2 += 11
+                pop_card = deck.pop(card2)           
+        else:
+            hand_value2 += deck[card2]
+            pop_card = deck.pop(card2)
+
+        if len(deck) == 0:
+            break
+        
+    return hand_value1, hand_value2
+
+def get_winner(hand_value1,hand_value2):
+    player1_winner = False
+    player2_winner = False
+    no_winner = False
+    both_winner = False
+
+    if hand_value1 <= 21 and hand_value2 > 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('Player 1 wins.\n')
+        player1_winner = True
+    elif hand_value1 > 21 and hand_value2 <= 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print(f'Player 2 wins.\n')
+        player2_winner = True
+    elif hand_value1 > 21 and hand_value2 > 21:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('There is no winner.\n')
+        no_winner = True
+    else:
+        print(f'Hand value of player 1: {hand_value1}.')
+        print(f'Hand value of player 2: {hand_value2}.')
+        print('Both players win.\n')
+        both_winner = True
+    return player1_winner, player2_winner, no_winner, both_winner
             
 # Call the main function.
 if __name__ == '__main__':
