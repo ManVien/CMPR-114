@@ -15,6 +15,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 7_Strings, Sets and 
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 7_Homework 7", "Module 7_Homework 7\Module 7_Homework 7.pyproj", "{6AA955E7-EA54-4501-B534-18AD69D6CA0E}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Midterm", "Midterm\Midterm.pyproj", "{66DA6637-FD79-441C-AE88-A2D8D05D5B44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,12 @@ Global
 		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|x64.ActiveCfg = Release|Any CPU
 		{6AA955E7-EA54-4501-B534-18AD69D6CA0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Release|x64.ActiveCfg = Release|Any CPU
+		{66DA6637-FD79-441C-AE88-A2D8D05D5B44}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
