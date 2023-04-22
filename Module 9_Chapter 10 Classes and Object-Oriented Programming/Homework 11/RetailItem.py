@@ -28,4 +28,3 @@ class RetailItem:
 
     def __str__(self):
         return self.__description + "\t\t\t\t" + str(self.__units) + "\t\t" + str(self.__price)
-
