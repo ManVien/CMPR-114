@@ -38,9 +38,12 @@
     <Compile Include="Class Exercise 9\Project 3.py" />
     <Compile Include="Class Exercise 9\Project 4.py" />
     <Compile Include="Class Exercise 9\Project 5.py" />
+    <Compile Include="Homework 11\Employee.py" />
+    <Compile Include="Homework 11\Pet.py" />
     <Compile Include="Homework 11\Project 1.py" />
     <Compile Include="Homework 11\Project 2.py" />
     <Compile Include="Homework 11\Project 3.py" />
+    <Compile Include="Homework 11\RetailItem.py" />
     <Compile Include="In class exercise\Project 1.py" />
     <Compile Include="In class exercise\Project2.py" />
     <Compile Include="In class exercise\Project 2b.py" />
