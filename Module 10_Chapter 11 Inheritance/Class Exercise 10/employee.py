@@ -46,3 +46,7 @@ class ProductionWorker(Employee):
 
     def get_pay_rate(self):
         return self.__pay_rate
+
+
+
+

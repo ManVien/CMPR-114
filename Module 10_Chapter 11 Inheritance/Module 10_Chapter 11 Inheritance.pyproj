@@ -40,6 +40,10 @@
     <Compile Include="Class Exercise 10\Project 1.py" />
     <Compile Include="Class Exercise 10\vehicles.py" />
     <Compile Include="Class Exercise 10\Project 3.py" />
+    <Compile Include="Homework 13\employee.py" />
+    <Compile Include="Homework 13\person.py" />
+    <Compile Include="Homework 13\Project 1.py" />
+    <Compile Include="Homework 13\Project 2.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
