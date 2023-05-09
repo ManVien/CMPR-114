@@ -21,6 +21,10 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 9_Chapter 10 Classes
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 10_Chapter 11 Inheritance", "Module 10_Chapter 11 Inheritance\Module 10_Chapter 11 Inheritance.pyproj", "{B9BA337F-F91E-4E45-909B-3E76F469DDF6}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Test 2", "Test 2\Test 2.pyproj", "{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 12 (Chapter 13 GUI Programming)", "Module 12 (Chapter 13 GUI Programming)\Module 12 (Chapter 13 GUI Programming).pyproj", "{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,18 @@ Global
 		{B9BA337F-F91E-4E45-909B-3E76F469DDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9BA337F-F91E-4E45-909B-3E76F469DDF6}.Release|x64.ActiveCfg = Release|Any CPU
 		{B9BA337F-F91E-4E45-909B-3E76F469DDF6}.Release|x86.ActiveCfg = Release|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Release|x64.ActiveCfg = Release|Any CPU
+		{E80DC44F-5B08-47CC-9B72-2EC913E4CA39}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
