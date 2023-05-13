@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="In class examples\" />
     <Folder Include="Class Exercise 11\" />
+    <Folder Include="Homework 14\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class Exercise 11\Class Exercise 1.py" />
@@ -42,6 +43,10 @@
     <Compile Include="Class Exercise 11\Project 7.py" />
     <Compile Include="Class Exercise 11\Project 8.py" />
     <Compile Include="Class Exercise 11\Project 9.py" />
+    <Compile Include="Homework 14\Class Exercise 2.py" />
+    <Compile Include="Homework 14\Class Exercise 4.py" />
+    <Compile Include="Homework 14\Project 1 - Class Exercise 1.py" />
+    <Compile Include="Homework 14\Project 2_Class Exercise 3.py" />
     <Compile Include="In class examples\Example1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
