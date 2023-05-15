@@ -25,6 +25,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Test 2", "Test 2\Test 2.pyp
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Module 12 (Chapter 13 GUI Programming)", "Module 12 (Chapter 13 GUI Programming)\Module 12 (Chapter 13 GUI Programming).pyproj", "{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Final Project", "Final Project\Final Project.pyproj", "{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,12 @@ Global
 		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|x64.ActiveCfg = Release|Any CPU
 		{EB921A52-3727-4DF0-BF8C-AD38098DF5B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B4FE6C6D-6B11-4F0C-81E4-F6B9BCBCA36C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

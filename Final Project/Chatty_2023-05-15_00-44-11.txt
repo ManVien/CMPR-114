@@ -1,0 +1,7 @@
+Conversation History:
+User: What is 1+1?
+Chatty: Sorry, I don't understand.
+User: What is Python?
+Chatty: Python is a high-level, interpreted, general-purpose programming language. It is a powerful and versatile language that can be used for a wide variety of tasks, from basic scripting to web development to complex data analysis. Python is designed with an emphasis on readability and code readability, and its syntax allows programmers to express concepts in fewer lines of code than other languages.
+User: Thanks
+Chatty: You're welcome!
