@@ -6,7 +6,7 @@ import random
 import datetime
 
 # Set up the OpenAI API key
-openai.api_key = "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"
+openai.api_key = 'YOUR_API_KEY'
 
 # Global constants for menu choices
 INFO_CHAT = 1

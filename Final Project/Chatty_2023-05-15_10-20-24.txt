@@ -1,0 +1,7 @@
+Conversation History:
+User: Man
+Chatty: Thank you for using the superhero guessing game!
+User: Who is Mario?
+Chatty: Mario is a fictional character from the Mario video game series created by Nintendo. He is the protagonist of the long-running and highly successful Mario franchise.
+User: Thanks
+Chatty: You're welcome!
